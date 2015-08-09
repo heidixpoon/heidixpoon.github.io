@@ -15,6 +15,8 @@
 		<link rel="stylesheet" type="text/css" href="css/other.css" />
     <link rel="stylesheet" type="text/css" href="css/box.css" />
 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen"> -->
 
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
@@ -34,10 +36,10 @@
 				<div id="large-header" class="large-header">
           <section class="color-1">
               <nav class="cl-effect-1">
-                <a href="#">ABOUT</a>
-                <a href="#">RESUME</a>
-                <a href="#">PORTFOLIO</a>
-                <a href="#">CONTACT</a>
+                <a href="#about">ABOUT</a>
+                <a href="#resume">RESUME</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT</a>
               </nav>
           </section>
 					<canvas id="demo-canvas"></canvas>
@@ -48,7 +50,7 @@
 					<a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=20153"><span>Back to the Codrops Article</span></a>
 				</div> -->
 
-				<div class="codrops-header">
+				<div class="codrops-header" id="about">
 					<h1>About Me <span>Full Stack Web Developer | Former Data Analyst | Photographer</span></h1>
           <section class="about" style="display: block;">
             <div class="portrait">
@@ -106,14 +108,15 @@
         </div>
 
 
-        <div class="codrops-header">
+        <div class="codrops-header" id="resume">
           <h1>Resume</h1>
           <br>
-          <iframe src="https://drive.google.com/file/d/0B4gRyA2L-ZuDbGh3TDBFWEh1VUE/preview" width="640" height="480"></iframe>
+					<iframe src="https://drive.google.com/file/d/0B4gRyA2L-ZuDYkEyaEpmTFg3aUE/preview" width="640" height="480"></iframe>
         </div>
 
+        <hr>
 
-        <div class="codrops-header">
+        <div class="codrops-header" id="portfolio">
           <h1>Portfolio</h1>
           <br>
           <div class="grid">
@@ -122,7 +125,7 @@
   						<figcaption>
   							<h2>HYPE<span>Fest</span></h2>
   							<p>For all your music festival needs</p>
-  							<a href="#">View more</a>
+  							<a href="https://github.com/heidixpoon/FestMess_App">View more</a>
   						</figcaption>
   					</figure>
 
@@ -131,7 +134,7 @@
   						<figcaption>
   							<h2><span>Pera</span></h2>
   							<p>A Travel Budgeting Web App</p>
-  							<a href="#">View more</a>
+  							<a href="https://github.com/heidixpoon/Pera_App">View more</a>
   						</figcaption>
   					</figure>
 				  </div>
@@ -157,7 +160,7 @@
   						<figcaption>
   							<h2>TicTac<span>Toe</span></h2>
   							<p>A Javascript/jQuery Project</p>
-  							<a href="#">View more</a>
+  							<a href="http://warden-agatha-38480.bitballoon.com/">View more</a>
   						</figcaption>
   					</figure>
 
@@ -174,12 +177,26 @@
 
 
 
-        <div class="codrops-header">
+        <div class="codrops-header contact" id="contact">
           <h1>Contact Me</h1>
-          <p>
-            sdfa
-          </p>
+					<h3>heidixpoon@gmail.com</h3>
+					<div class="social-icons">
+						<a class="icon fa fa-github" href="#"><i class="https://github.com/heidixpoon"</a>
+						<a class="icon fa fa-linkedin fa-2" href="https://www.linkedin.com/in/heidipoon1"></a>
+					  <a class="icon fa fa-facebook fa-2" href="https://www.facebook.com/heidixheidii"></a>
+					  <a class="icon fa fa-instagram fa-2" href="https://instagram.com/heidixpan/"></a>
+					  <a class="icon fa fa-twitter fa-2" href="#"></a>
+
+					</div>
         </div>
+
+				<br><br>
+
+				<div class="scroll-top-wrapper ">
+					<span class="scroll-top-inner">
+						<i class="fa fa-2x fa-arrow-circle-up"></i>
+					</span>
+				</div>
 
 
 			</div>
@@ -190,6 +207,46 @@
 		<script src="js/rAF.js"></script>
 		<script src="js/demo-1.js"></script>
     <script src="js/classie.js"></script>
+
+		<script type="text/javascript">
+		$('a[href^="#"]').on('click', function(event) {
+
+			var target = $( $(this).attr('href') );
+
+			if( target.length ) {
+				event.preventDefault();
+				$('html, body').animate({
+						scrollTop: target.offset().top
+				}, 1000);
+			}
+
+		});
+		</script>
+
+
+		<script type="text/javascript">
+			$(function(){
+
+			$(document).on( 'scroll', function(){
+
+				if ($(window).scrollTop() > 100) {
+					$('.scroll-top-wrapper').addClass('show');
+				} else {
+					$('.scroll-top-wrapper').removeClass('show');
+				}
+			});
+
+			$('.scroll-top-wrapper').on('click', scrollToTop);
+			});
+
+			function scrollToTop() {
+			verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+			element = $('body');
+			offset = element.offset();
+			offsetTop = offset.top;
+			$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+			}
+		</script>
 
 
 
