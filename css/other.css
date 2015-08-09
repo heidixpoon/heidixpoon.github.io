@@ -36,3 +36,80 @@ table{
 .hide-weird{
   color: white;
 }
+
+hr {
+    border: 0;
+    width: 70%;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact{
+  background-color: #74d4b3;
+}
+
+
+/*Social Media Icons*/
+
+.icon{
+  color: #fff;
+  border-radius: 4px;
+  background: #74d4b3;
+  width:40px;
+  height:40px;
+  padding-top:12px;
+  margin:0 2px;
+  -o-transition:all .6s;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  transition: all .6s;
+   -webkit-font-smoothing: antialiased;
+}
+
+.icon:hover{
+  background: #E4EFE6;
+}
+
+
+
+
+/*    */
+/*for scroll to top button*/
+/*    */
+.scroll-top-wrapper {
+  position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+  background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 50%;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
+}
