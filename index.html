@@ -14,6 +14,7 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/other.css" />
     <link rel="stylesheet" type="text/css" href="css/box.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<!-- <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen"> -->
@@ -43,7 +44,7 @@
               </nav>
           </section>
 					<canvas id="demo-canvas"></canvas>
-          <h1 class="main-title">HEIDI POON <br> <span class="thin">Front-End Web Developer</span></h1>
+          <h1 class="main-title">HEIDI POON <br> <span class="thin">Full Stack Web Developer</span></h1>
 				</div>
 				<!-- <div class="codrops-top clearfix">
 					<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/OffCanvasMenuEffects/"><span>Previous Demo</span></a>
@@ -51,7 +52,7 @@
 				</div> -->
 
 				<div class="codrops-header" id="about">
-					<h1>About Me <span>Full Stack Web Developer | Former Data Analyst | Photographer</span></h1>
+					<h1 class="wow animated pulse infinite">About Me <span>Full Stack Web Developer | Former Data Analyst | Photographer</span></h1>
           <section class="about" style="display: block;">
             <div class="portrait">
               <img src="img/portrait.jpg" alt="Heidi" id="profile-pic"/>
@@ -83,7 +84,7 @@
                   <p>HTML5 / CSS3</p>
                   <p>Javascript / jQuery</p>
                   <p>AJAX</p>
-                  <p>Bootstrap</p>
+                  <p>Bootstrap & Pure</p>
                   <p>Backbone.js / Underscore</p>
                 </td>
                 <td class="skills">
@@ -177,8 +178,8 @@
 
 
 
-        <div class="codrops-header contact" id="contact">
-          <h1>Contact Me</h1>
+        <div class="codrops-header contact wow animated fadeInLeft" id="contact">
+          <h1 class="wow animated infinite fadeIn">Contact Me</h1>
 					<h3>heidixpoon@gmail.com</h3>
 					<br>
 					<div class="social-icons">
@@ -247,6 +248,11 @@
 			offsetTop = offset.top;
 			$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
 			}
+		</script>
+
+		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
 		</script>
 
 
