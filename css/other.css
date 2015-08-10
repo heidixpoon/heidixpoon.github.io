@@ -55,7 +55,7 @@ hr {
 .icon{
   color: #fff;
   border-radius: 4px;
-  background: #81d8d0;
+  background: #a6e3de;
   width:40px;
   height:40px;
   padding-top:12px;
@@ -68,8 +68,12 @@ hr {
 }
 
 .icon:hover{
-  background: #a6e3de;
+  background: #d9f3f0;
 }
+
+a span{
+  display: none;}
+
 
 
 
